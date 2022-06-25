@@ -7,62 +7,62 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <link rel='stylesheet' href='css/style.css'>
     <!--<link href="" rel="icon">-->
 </head>
 <body>
     <!-- este es un texto de prueba que no se ejecuta-->
     <header>
-        <h1>Logo</h1>
-        <ul>
-            <li><a href="http://">Facebook</a></li>
-            <li><a href="http://">Twitter</a></li>
-            <li><a href="http://">Instagram</a></li>
-        </ul>
-        <nav>
-        <ul>
-            <li> <a href="/">Inicio</a></li>
-            <li> <a href="quien.html">Quienes Somos</a></li>
-            <li> <a href="servicios.html">Servicios</a></li>
-            <li> <a href="productos.html">Productos</a></li>
-            <li> <a href="contacto.html">Contactos</a></li>
-        </ul>
-        </nav>
+        <div class="container">
+            <h1 id="logo">Logo</h1>
+            <ul id="social">
+                <li><a href="http://">Facebook</a></li>
+                <li><a href="http://">Twitter</a></li>
+                <li><a href="http://">Instagram</a></li>
+            </ul>
+            <div class="clear"></div>
+            <nav id="main-nav">
+            <ul>
+                <li> <a href="/">Inicio</a></li>
+                <li> <a href="quien.html">Quienes Somos</a></li>
+                <li> <a href="servicios.html">Servicios</a></li>
+                <li> <a href="productos.html">Productos</a></li>
+                <li> <a href="contacto.html">Contactos</a></li>
+            </ul>
+            </nav>
+        </div>
 
     </header>
 
     <main id="productos">
-        <h1>Productos</h1>
-    <section>
-        <div class="row">
-             <div class="col">
-                 <div class="prod-box">
-                   <h3>Producto A</h3>
-                   <img src="imagens/productos/b.webp" alt="Auto a">
-                   <a href="#">Comprar</a>
+        <div class="container">
+        <h1>Vehiculos</h1>
+            <section>
+                <div class="products">
+                    <div class="prod-box">
+                        <h3>Azul</h3>
+                        <img src="imagens/productos/b.webp" alt="Auto a">
+                        <a href="#" class="btn-2">Comprar el Azul</a>
+                    </div>
+                    <div class="prod-box">
+                        <h3>Rojo</h3>
+                        <img src="imagens/productos/c.png" alt="Auto B">
+                        <a href="#" class="btn-2">Comprar el Rojo</a>
+                    </div>
+                    <div class="prod-box">
+                        <h3>Blanco</h3>
+                        <img src="imagens/productos/d.png" alt="Auto C">
+                        <a href="#" class="btn-2">Comprar el Blanco</a>
+                    </div>
                 </div>
-             </div>
-       
-        <h1>Productos B</h1>
-            <div class="col">
-                   <div class="prod-box"></div>
-                   <h3>Producto B</h3>
-                   <img src="imagens/productos/c.png" alt="Auto B">
-                   <a href="#">Comprar</a>
-            </div>
-       
-        <h1>Productos C</h1>
-            <div class="col">
-                   <div class="prod-box"></div>
-                   <h3>Producto C</h3>
-                   <img src="imagens/productos/d.png" alt="Auto C">
-                   <a href="#">Comprar</a>
-            </div>
+            </section>
         </div>
-    </section>
        
     </main>
     <footer>
+        <div class="container">
         Copyright 2022 / Mi LAB CURSO
+        </div>
     </footer>
 
 </body>

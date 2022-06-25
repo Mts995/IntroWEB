@@ -7,12 +7,31 @@
     clear: both;
 }
 
+.btn{
+    display: inline-block;
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+}
+a.btn{
+    text-decoration: none;
+    color: white;
+}
+.btn-1{
+    background-color: rgb(90, 90, 235);
+}
+
+.btn-2{
+    background-color: rgb(90, 90, 235);
+}
+
 body{
     background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
-    background-color: rgb(233, 85, 85);
+    background-color: rgb(90, 90, 235);
     color: #fff;
     padding: 10px 0;
 
@@ -30,6 +49,7 @@ header a{
 footer{
 background-color: aquamarine;
 color: #fff;
+padding: 3em;
 }
 
 .container {
@@ -42,3 +62,136 @@ color: #fff;
     float: left;
 }
 
+#social{
+    float: right;
+}
+
+#social li{
+    display: inline;
+    float: left;
+    padding: 5px;
+}
+
+#main-nav{
+    background-color: #333;
+    border: 1px solid #666;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    margin-top: 2em;
+}
+#main-nav ul li {
+    float: left;
+
+}
+#main-nav ul li a{
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+#main-nav ul li a:hover{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.slide{
+    background-image: url(../imagens/gb.png);
+    display: flex;
+    margin: 5px;
+
+}
+.slide h1{
+    color: rgb(90, 90, 235);
+    margin: 5px;
+}
+.slide .slide-item p{
+    padding-bottom: 10px;
+}
+
+.slide.text{
+    margin: 2em;
+}
+.boxes{
+    display: flex;
+    margin: 0 2em 0 0;
+}
+.boxes .box{
+    border: 1px #ccc solid;
+    margin: 5px;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: #ccc 5px 5px 5px;
+}
+.boxes .box h3{
+    color: rgb(90, 90, 235);
+    margin: 0,5em 0;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products .prod-box {
+    width: 33.3%;
+    margin: 2em;
+    border: 1px #ccc solid;
+    padding: 1rem;
+    border-radius: 5px ;
+    box-shadow: #ccc 0 0 5px;
+}
+.products .prod-box img{
+width: 100%;
+}
+.products .prod-box h3{
+margin: 0.5rem 0;
+}
+.contact{
+display: flex;
+}
+.contact .contact-info{
+width: 50%;
+}
+.contact .contact-form{
+padding: 0 1rem;
+}
+.contact .contact-form h3{
+
+}
+.contact .contact-form label{
+    display: block;
+    margin: 5px 0;
+}
+
+.contact .contact-form input[type="email"],
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="tel"],
+.contact .contact-form textarea{
+    width: 100%;
+    border: 1px #ccc solid;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+
+@media only screen and (max-width: 760px) {
+          .contact{
+            flex-direction: column;
+      }
+      .contact .contact-info{
+        width: 100%;
+      }
+    .contact .contact-form{
+        order: 1;
+    }
+    .contact .contact-form{
+        order: 2;
+        height: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .contact .contact-form input[type="email"],
+    .contact .contact-form input[type="text"],
+    .contact .contact-form input[type="tel"],
+    .contact .contact-form textarea{
+        width: 90%;
+    }
+  }
